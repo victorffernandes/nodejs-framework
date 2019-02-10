@@ -12,8 +12,9 @@ class Log {
     }
 
     debug(msg) {
+        const cwd = process.cwd();
         console.log(msg);
-        fs.appendFile(`logs/logs.txt`, this.formatMessage(msg) + '\n', { flag: 'as' }, function (err) {
+        fs.appendFile(`${cwd}logs/logs.txt`, this.formatMessage(msg) + '\n', { flag: 'as' }, function (err) {
             if (err) throw err;
         });
     }
