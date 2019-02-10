@@ -1,6 +1,7 @@
 
-var restify = require('restify');
-var middlewares = require('./middlewares');
+import restify from 'restify';
+import middlewares from './middlewares';
+import router from './router';
 
 class Server {
     constructor() {
@@ -15,6 +16,7 @@ class Server {
         middlewares.forEach((middleware) => {
             this.server.use(middleware);
         });
+        router.importRoutes();
     }
 }
 export default new Server();
