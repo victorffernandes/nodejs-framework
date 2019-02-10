@@ -1,6 +1,6 @@
 {
   "name": "nodejs-framework",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A nodejs framework for developing web services.",
   "main": "index.js",
   "directories": {
@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "test",
+    "start":"node index.js",
     "babel": "babel-node index.js",
     "lib":"./node_modules/.bin/babel src --out-dir lib"
   },
