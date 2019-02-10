@@ -1,6 +1,6 @@
 {
   "name": "nodejs-framework",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A nodejs framework for developing web services.",
   "main": "index.js",
   "directories": {
@@ -8,9 +8,9 @@
   },
   "scripts": {
     "test": "test",
-    "start":"node index.js",
+    "start": "node index.js",
     "babel": "babel-node index.js",
-    "lib":"./node_modules/.bin/babel src --out-dir lib"
+    "lib": "./node_modules/.bin/babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
   "homepage": "https://github.com/victorffernandes/nodejs-framework#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "pre-commit": "^1.2.2"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -33,7 +34,7 @@
     "restify": "^7.7.0",
     "restify-plugins": "^1.6.0"
   },
-  "pre-commit":[
-    "npm run lib"
+  "pre-commit": [
+    "lib"
   ]
 }
