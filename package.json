@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "test",
-    "babel": "babel-node index.js"
+    "babel": "babel-node index.js",
+    "lib":"./node_modules/.bin/babel src --out-dir lib"
   },
   "repository": {
     "type": "git",

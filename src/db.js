@@ -1,4 +1,4 @@
-import Base from '../lib/Base';
+import Base from './lib/Base';
 
 class Database extends Base {
     constructor(type, connectionString, name, user, password) {

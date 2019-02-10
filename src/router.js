@@ -1,5 +1,5 @@
 import glob from 'glob';
-import Base from '../lib/Base';
+import Base from './lib/Base';
 
 class Router extends Base {
     importRoutes() {

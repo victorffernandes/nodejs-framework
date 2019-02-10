@@ -1,4 +1,4 @@
-import Log from '../utils/log';
+import Log from '../log';
 
 class Base{
     constructor() {
