@@ -10,7 +10,8 @@
     "test": "test",
     "start": "node index.js",
     "babel": "babel-node index.js",
-    "lib": "./node_modules/.bin/babel src --out-dir lib"
+    "lib": "./node_modules/.bin/babel src --out-dir lib",
+    "add" :"git add lib/"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "restify-plugins": "^1.6.0"
   },
   "pre-commit": [
-    "lib"
+    "lib",
+    "add"
   ]
 }
