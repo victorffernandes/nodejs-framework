@@ -7,6 +7,8 @@ class Server {
     constructor() {
         if (!Server.server) {
             this.server = restify.createServer();
+        } else{
+            return this.server;
         }
         this.configureServer();
         return this.server;
