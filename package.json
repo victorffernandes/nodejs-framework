@@ -1,6 +1,6 @@
 {
   "name": "nodejs-framework",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A nodejs framework for developing web services.",
   "main": "index.js",
   "directories": {
@@ -32,5 +32,8 @@
     "mongoose": "^5.4.11",
     "restify": "^7.7.0",
     "restify-plugins": "^1.6.0"
-  }
+  },
+  "pre-commit":[
+    "npm run lib"
+  ]
 }
